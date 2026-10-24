@@ -1,0 +1,9 @@
+{
+  "name": "compresseur",
+  "version": "1.0.0",
+  "description": "Compresseur de fichiers sans perte (RLE, Huffman, LZW, LZ77+Huffman)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/roundtrip.test.js tests/media.test.js"
+  }
+}

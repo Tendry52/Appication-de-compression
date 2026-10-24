@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compresseur</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Compresseur de fichiers</h1>
+
+  <section class="card">
+    <h2>Compresser</h2>
+    <input type="file" id="compress-input">
+    <br><label class="muted">Niveau pour les images, sons et vidéos :
+      <select id="level">
+        <option value="light">Léger</option>
+        <option value="balanced" selected>Équilibré</option>
+        <option value="strong">Fort</option>
+        <option value="original">Qualité d'origine</option>
+      </select></label>
+    <br><button id="compress-btn">Compresser</button>
+    <progress id="compress-progress" max="1" value="0" hidden></progress>
+    <div id="compress-status" class="muted"></div>
+    <div id="compress-result"></div>
+  </section>
+
+  <section class="card">
+    <h2>Décompresser (.tdr)</h2>
+    <input type="file" id="decompress-input" accept=".tdr">
+    <br><button id="decompress-btn">Décompresser</button>
+    <progress id="decompress-progress" max="1" value="0" hidden></progress>
+    <div id="decompress-status" class="muted"></div>
+    <div id="decompress-result"></div>
+  </section>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
