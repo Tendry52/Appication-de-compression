@@ -2,6 +2,9 @@
 
 Application web de compression pour tous les types de fichiers. 
 
+Nom: ANDRIANIHASINAVALONA Tendry Irina
+L2IDEV n°23
+
 - **Texte, code, exécutables, données** : RLE, Huffman, LZW, LZ77 + Huffman, résultat identique à l'original.
 - **Images et sons** : DCT + quantification au niveau choisi, avec indicateur de fidélité.
 - **Vidéos** (MP4, MKV, WebM, AVI, MOV) : ré-encodées par le navigateur avec un débit plus faible, en temps réel, sortie `.webm`.
